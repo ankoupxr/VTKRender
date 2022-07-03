@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{80889275-ad81-4ca8-9cd1-2fc76ae42801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT">
+      <UniqueIdentifier>{4d987829-0303-478e-a038-020d81df0af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VTK">
+      <UniqueIdentifier>{a2b7504d-619c-4504-bc71-14de50cb82ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VTK\include">
+      <UniqueIdentifier>{ae3add33-8847-4c08-8434-160c5cb6527f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VTK\src">
+      <UniqueIdentifier>{58de8f06-e263-4377-8a9c-acc7c3a5a0c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{49327174-6d90-4a2f-aa89-1795321df591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{a0866125-095d-4848-8472-652aab2e7ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\include">
+      <UniqueIdentifier>{c7bf9c7f-1d84-4ccd-86b0-dc988e3e3c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\src">
+      <UniqueIdentifier>{c3e8899e-a4e1-493f-86d6-b7557d5f26af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="VTKRender.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="VTKRender.ui">
+      <Filter>UI</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="VTKwidget2d.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VTKRender.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="VTKwidgetBase.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VTKwidget2d.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="VTKwidgetBase.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="VTKRender.h">
+      <Filter>GUI</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
