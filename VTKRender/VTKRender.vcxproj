@@ -98,8 +98,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="VTKRotator.cpp" />
     <ClCompile Include="VTKwidget2d.cpp" />
+    <ClCompile Include="VTKwidget2DInteractorStyle.cpp" />
+    <ClCompile Include="VTKwidget3d.cpp" />
+    <ClCompile Include="VTKWidget3DInteractorStyle.cpp" />
     <ClCompile Include="VTKwidgetBase.cpp" />
+    <ClCompile Include="VTKwidgetDICOM.cpp" />
     <QtRcc Include="VTKRender.qrc" />
     <QtUic Include="VTKRender.ui" />
     <QtMoc Include="VTKRender.h" />
@@ -107,8 +112,13 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="VTKRotator.h" />
     <ClInclude Include="VTKwidget2d.h" />
+    <ClInclude Include="VTKwidget2DInteractorStyle.h" />
+    <ClInclude Include="VTKwidget3d.h" />
+    <ClInclude Include="VTKWidget3DInteractorStyle.h" />
     <ClInclude Include="VTKwidgetBase.h" />
+    <ClInclude Include="VTKwidgetDICOM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

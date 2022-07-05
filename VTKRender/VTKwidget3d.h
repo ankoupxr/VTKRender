@@ -16,7 +16,7 @@ namespace VTKRender
 
 		private: 
 
-			vtkSmartPointer<vtkWidget3DInteractorStyle>
+			//vtkSmartPointer<vtkWidget3DInteractorStyle>
 
 			void InitWidget();
 			void InitBoxWidget();

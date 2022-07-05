@@ -54,12 +54,42 @@
     <ClCompile Include="VTKwidgetBase.cpp">
       <Filter>VTK\src</Filter>
     </ClCompile>
+    <ClCompile Include="VTKwidget3d.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VTKWidget3DInteractorStyle.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VTKRotator.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VTKwidget2DInteractorStyle.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VTKwidgetDICOM.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VTKwidget2d.h">
       <Filter>VTK\include</Filter>
     </ClInclude>
     <ClInclude Include="VTKwidgetBase.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="VTKwidget3d.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="VTKWidget3DInteractorStyle.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="VTKRotator.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="VTKwidget2DInteractorStyle.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="VTKwidgetDICOM.h">
       <Filter>VTK\include</Filter>
     </ClInclude>
   </ItemGroup>
