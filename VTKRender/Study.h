@@ -1,27 +1,25 @@
-#include "Study.h"
-#include <algorithm>
+#pragma once
 
-VTKRender::Series* VTKRender::Study::addSeries(std::unique_ptr<Series> t_series, bool& t_newSeries)
+#include <string>
+#include <vector>
+#include "Series.h"
+
+
+namespace VTKRender
 {
-	auto index = findSeriesIndex(t_series.get());
-	t_newSeries = false;
-	if (index == m_series.size())
+	class  Study
 	{
-		m_series.emplace_back(std::move(t_series));
-		index = m_series.size() - 1;
-		t_newSeries = true;
-	}
-	m_series.at(index)->setIndex(index);
-	return m_series.at(index).get();
-}
+	public:
+		Study();
+		~Study();
 
-//-----------------------------------------------------------------------------
-std::size_t VTKRender::Study::findSeriesIndex(Series* t_series)
-{
-	const auto it = std::find_if(m_series.begin(),
-		m_series.end(), [&t_series](const std::unique_ptr<Series>& series)
-		{
-			return t_series->getUID() == series->getUID();
-		});
-	return std::distance(m_series.begin(), it);
+	private:
+		std::string ModulationType;
+		std::string InstitutionName;
+		std::string PatientBirthDate;
+		std::string PatientSex;
+		std::string PatientAge;
+		std::string StudyId;
+		std::vector<Series*> SeriesList;
+	};
 }

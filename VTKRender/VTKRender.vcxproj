@@ -98,6 +98,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="Patient.cpp" />
+    <ClCompile Include="Series.cpp" />
+    <ClCompile Include="Study.cpp" />
     <ClCompile Include="VTKRotator.cpp" />
     <ClCompile Include="VTKwidget2d.cpp" />
     <ClCompile Include="VTKwidget2DInteractorStyle.cpp" />
@@ -112,6 +116,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="Patient.h" />
+    <ClInclude Include="Series.h" />
+    <ClInclude Include="Study.h" />
     <ClInclude Include="VTKRotator.h" />
     <ClInclude Include="VTKwidget2d.h" />
     <ClInclude Include="VTKwidget2DInteractorStyle.h" />
