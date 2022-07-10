@@ -3,6 +3,7 @@
 #include <vtkDICOMImageReader.h>
 #include <vtkWeakPointer.h>
 #include <vtkSmartPointer.h>
+#include <string>
 
 namespace VTKRender
 {
@@ -10,32 +11,39 @@ namespace VTKRender
 	class Image
 	{
 	public:
-		Image() = default;
-		~Image() = default;
+		Image();
+		~Image();
+	public:
+		std::string ReferencedFileID;    //Dicom图像的绝对路径
+		std::string InstanceCreationDate;//图片建立时间
+		std::string kpv;				 //看起来可能有点用
+		std::string SliceLocation;		 //emmm
+		std::string InstanceNumber;      //组内编号
+		std::string AbsFilePath;		 //该文件在文件系统上的绝对文件名
+		int row;
+		int col;//图片尺寸
+		std::string PixelSpacing;        //像素空间
+	public:
+		std::string getReferencedFileID();
+		void setReferencedFileID(std::string value);
 
+		std::string getInstanceCreationDate();
+		void setInstanceCreationDate(std::string value);
 
-	private:
-		std::size_t m_index = -1;
-		Series* m_parent = {};
-		std::string m_path = {};
-		std::string m_sopInstanceUid = {};
-		std::string m_classUid = {};
-		std::string m_frameOfReferenceId = {};
-		std::string m_modality = {};
-		int m_instanceNumber = {};
-		int m_windowsCenter = {};
-		int m_windowWidth = {};
-		int m_rows = {};
-		int m_columns = {};
-		int m_numberOfFrames = {};
-		double m_sliceLocation = {};
-		double m_pixelSpacingX = -1;
-		double m_pixelSpacingY = -1;
-		int m_acquisitionNumber = {};
-		bool m_isMultiframe = false;
-		vtkWeakPointer<vtkDICOMImageReader> m_imageReader = {};
+		std::string getkpv();
+		void setkpv(std::string value);
 
-		static bool isLess(Image* t_lhs, Image* t_rhs);
+		std::string getSliceLocation();
+		void setSliceLocation(std::string value);
+
+		std::string getPixelSpacing();
+		void setPixelSpacing(std::string value);
+
+		int getRow();
+		void setRow(int value);
+
+		int getCol();
+		void setCol(int value);
 
 	};
 }

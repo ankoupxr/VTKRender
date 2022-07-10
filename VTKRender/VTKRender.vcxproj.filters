@@ -26,11 +26,17 @@
     <Filter Include="Graphic">
       <UniqueIdentifier>{a0866125-095d-4848-8472-652aab2e7ec9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\include">
-      <UniqueIdentifier>{c7bf9c7f-1d84-4ccd-86b0-dc988e3e3c0b}</UniqueIdentifier>
+    <Filter Include="Graphic\DICOM">
+      <UniqueIdentifier>{dc23289c-ffc2-46bc-a0b2-72e55caac17c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\src">
-      <UniqueIdentifier>{c3e8899e-a4e1-493f-86d6-b7557d5f26af}</UniqueIdentifier>
+    <Filter Include="Graphic\Reconstruction">
+      <UniqueIdentifier>{c22b4c8d-c531-413c-81b4-34dc162699f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\include">
+      <UniqueIdentifier>{d42ce4d7-553b-46f8-8ce4-72fa96d282b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QT\src">
+      <UniqueIdentifier>{0372d012-062d-4de7-8369-2c30b32edefd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +75,39 @@
     <ClCompile Include="VTKwidgetDICOM.cpp">
       <Filter>VTK\src</Filter>
     </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
+    <ClCompile Include="Series.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
+    <ClCompile Include="Study.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
+    <ClCompile Include="Patient.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
+    <ClCompile Include="Reconstruction3d.cpp">
+      <Filter>Graphic\Reconstruction</Filter>
+    </ClCompile>
+    <ClCompile Include="QTDicomViewer.cpp">
+      <Filter>QT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VTKBiDimensionalCallback.cpp">
+      <Filter>VTK\src</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonHelper.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
+    <ClCompile Include="DicomDataBase.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
+    <ClCompile Include="DicomDir.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
+    <ClCompile Include="DicomDirTreeModel.cpp">
+      <Filter>Graphic\DICOM</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VTKwidget2d.h">
@@ -92,10 +131,46 @@
     <ClInclude Include="VTKwidgetDICOM.h">
       <Filter>VTK\include</Filter>
     </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Graphic\DICOM</Filter>
+    </ClInclude>
+    <ClInclude Include="Series.h">
+      <Filter>Graphic\DICOM</Filter>
+    </ClInclude>
+    <ClInclude Include="Study.h">
+      <Filter>Graphic\DICOM</Filter>
+    </ClInclude>
+    <ClInclude Include="Patient.h">
+      <Filter>Graphic\DICOM</Filter>
+    </ClInclude>
+    <ClInclude Include="VTKBiDimensionalCallback.h">
+      <Filter>VTK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonHelper.h">
+      <Filter>Graphic\DICOM</Filter>
+    </ClInclude>
+    <ClInclude Include="DicomDataBase.h">
+      <Filter>Graphic\DICOM</Filter>
+    </ClInclude>
+    <ClInclude Include="DicomTreeItem.h">
+      <Filter>Graphic\DICOM</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="VTKRender.h">
       <Filter>GUI</Filter>
+    </QtMoc>
+    <QtMoc Include="Reconstruction3d.h">
+      <Filter>Graphic\Reconstruction</Filter>
+    </QtMoc>
+    <QtMoc Include="QTDicomViewer.h">
+      <Filter>QT\include</Filter>
+    </QtMoc>
+    <QtMoc Include="DicomDir.h">
+      <Filter>Graphic\DICOM</Filter>
+    </QtMoc>
+    <QtMoc Include="DicomDirTreeModel.h">
+      <Filter>Graphic\DICOM</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>

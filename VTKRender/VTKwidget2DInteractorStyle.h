@@ -12,8 +12,14 @@ namespace VTKRender
 		
 		VTKwidget2DInteractorStyle() = default;
 		~VTKwidget2DInteractorStyle() = default;
-
-		int getCurrentImageIndex() const { return currentImageIndex; }
+		vtkTypeMacro(VTKwidget2DInteractorStyle, vtkInteractorStyleImage);
+		enum MOUSEFUNC
+		{
+			POINTER,
+			ZOOM,
+			GRAYLEVEL,
+			MOVE
+		}MouseFunction;
 
 	protected:
 		void OnMouseMove() override;

@@ -1,7 +1,8 @@
 #pragma once
 
 #include <set>
-#include <memory>
+#include <string>
+#include <vector>
 #include "Image.h"
  
 
@@ -11,14 +12,11 @@ namespace VTKRender
 	class Series
 	{
 	public:
-		Series() = default;
-		~Series() = default;
+		Series();
+		~Series();
 
 
-
-		//setters
-
-	private:
+	public:
 		std::string Manufacturer;					//制造商
 		std::string StationName;					//仪器名称
 		std::string SeriseNumber;					//

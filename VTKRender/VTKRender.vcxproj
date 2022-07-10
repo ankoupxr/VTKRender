@@ -98,10 +98,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CommonHelper.cpp" />
+    <ClCompile Include="DicomDataBase.cpp" />
+    <ClCompile Include="DicomDir.cpp" />
+    <ClCompile Include="DicomDirTreeModel.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="Patient.cpp" />
+    <ClCompile Include="QTDicomViewer.cpp" />
+    <ClCompile Include="Reconstruction3d.cpp" />
     <ClCompile Include="Series.cpp" />
     <ClCompile Include="Study.cpp" />
+    <ClCompile Include="VTKBiDimensionalCallback.cpp" />
     <ClCompile Include="VTKRotator.cpp" />
     <ClCompile Include="VTKwidget2d.cpp" />
     <ClCompile Include="VTKwidget2DInteractorStyle.cpp" />
@@ -116,10 +123,18 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CommonHelper.h" />
+    <ClInclude Include="DicomDataBase.h" />
+    <QtMoc Include="DicomDir.h" />
+    <QtMoc Include="DicomDirTreeModel.h" />
+    <ClInclude Include="DicomTreeItem.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="Patient.h" />
+    <QtMoc Include="Reconstruction3d.h" />
+    <QtMoc Include="QTDicomViewer.h" />
     <ClInclude Include="Series.h" />
     <ClInclude Include="Study.h" />
+    <ClInclude Include="VTKBiDimensionalCallback.h" />
     <ClInclude Include="VTKRotator.h" />
     <ClInclude Include="VTKwidget2d.h" />
     <ClInclude Include="VTKwidget2DInteractorStyle.h" />

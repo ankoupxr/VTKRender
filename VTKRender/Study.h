@@ -13,7 +13,7 @@ namespace VTKRender
 		Study();
 		~Study();
 
-	private:
+	public:
 		std::string ModulationType;
 		std::string InstitutionName;
 		std::string PatientBirthDate;

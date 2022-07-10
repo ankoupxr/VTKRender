@@ -7,6 +7,7 @@
 #include <vtkSmartPointer.h>
 #include <vtkFixedPointVolumeRayCastMapper.h>
 #include <vtkImageCast.h>
+#include "VTKwidgetDICOM.h"
 
 namespace VTKRender {
 	class Reconstruction3d : public QWidget
@@ -14,7 +15,7 @@ namespace VTKRender {
 		Q_OBJECT
 
 	public:
-		Reconstruction3d(QWidget* parent = Q_NULLPTR);//默认构造
+		Reconstruction3d(QWidget *parent = Q_NULLPTR);//默认构造
 		Reconstruction3d(std::vector<std::string>* filenames_v, QWidget* parent = Q_NULLPTR);//带数据构造
 		~Reconstruction3d();
 
@@ -30,10 +31,11 @@ namespace VTKRender {
 		//vtkVolumeRayCastCompositeFunction* m_VolumeRayCastCompositeFunction;
 		vtkFixedPointVolumeRayCastMapper* m_FixedPointVolumeRayCastMapper;
 		vtkVolume* volume1;
-		//vtkSmartPointer<vtkMyDICOMImageReader> m_MyDICOMImageReader;
+		vtkSmartPointer<VTKwidgetDICOM> m_DICOMImageReader;
 		vtkSmartPointer<vtkInteractorStyleTrackballCamera> TrackballCamera;
 		vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor;
 		vtkGPUVolumeRayCastMapper* m_volumeMapper_gpu;
+		vtkSmartPointer<vtkStringArray> m_Filenames;
 	private:
 		void RenderPipeline_CPU(vtkStringArray*);//CPU渲染管线
 		void RenderPipeline_GPU(vtkStringArray*);//GPU渲染管线
